@@ -1,0 +1,13 @@
+.clickable:hover
+{
+    background-color: rgba(128, 128, 150, 0.3);
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+.clickable
+{
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    border-radius:5px;
+}
