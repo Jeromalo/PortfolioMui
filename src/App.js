@@ -45,13 +45,14 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          Du hard-Skill :
-          <br></br>
+        <Typography style={{fontWeight: "bold"}}>Du hard-skill :</Typography>
           Html / Css
           <br></br>
-          React / JavaScript /
+          React / JavaScript
           <br></br>
-          Flask
+          Flask / PHP
+          <br></br>
+          Wordpress
           <br></br>
           <br></br>
         </TimelineContent>
@@ -62,13 +63,16 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          Du Soft-Skill :
-          <br></br>
+        <Typography style={{fontWeight: "bold"}}>Du soft-skill:</Typography>
           Autonomie
           <br></br>
           Collectif
           <br></br>
+          Sens de l'équipe
+          <br></br>
           Agile
+          <br></br>
+          Créatif
           <br></br>
           <br></br>
         </TimelineContent>
@@ -79,11 +83,10 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          De la passion :
-          <br></br>
+        <Typography style={{fontWeight: "bold"}}>De la passion :</Typography>
           Checkez mon instagram
           <br></br>
-          <CardActions sx = {{ mt:'-17px', ml:'-17px'}}>
+          <CardActions sx={{ mt: '-17px', ml: '-17px' }}>
             <Button size="medium" href="https://www.instagram.com/jeromalo/?hl=fr" target="_blank">@Jeromalo</Button>
           </CardActions>
           <br></br>
@@ -95,9 +98,15 @@ export function AlternateTimeline() {
           <TimelineDot color="secondary" />
         </TimelineSeparator>
         <TimelineContent>
-          Un parcours atypique :
+          <Typography style={{fontWeight: "bold"}}>Un parcours atypique :</Typography>
+          Un BTS commercial,
           <br></br>
-          De l'ESRA à Matrice-UVSQ
+          des études à l'ESRA Paris
+          <br></br>
+          12 ans d'expériences dans l'audiovisuel,
+          <br></br>
+          une reconversion dans le numérique
+          en septembre 2021 via Matrice- UVSQ
           <br></br>
           <br></br>
         </TimelineContent>
@@ -179,7 +188,7 @@ function ControlledAccordions() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
           id="panel2bh-header"
-          sx={{ bgcolor: 'fourth.main' }}
+          sx={{ bgcolor: '#c4e4a2' }}
         >
           <Typography sx={{ width: '100%', height: '45px', flexShrink: 0, textAlign: 'center', paddingTop: '10px' }}>Découvrez mes projets techs</Typography>
         </AccordionSummary>
@@ -202,7 +211,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Piggy Bank
                     </Typography>
                     <Typography>
@@ -229,7 +238,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Snake
                     </Typography>
                     <Typography>
@@ -257,7 +266,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Weather Forecast
                     </Typography>
                     <Typography>
@@ -290,7 +299,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Emoji Garden
                     </Typography>
                     <Typography>
@@ -317,7 +326,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Flour Shower
                     </Typography>
                     <Typography>
@@ -346,7 +355,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
                       Greasy Bar
                     </Typography>
                     <Typography>
@@ -380,63 +389,13 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Portfolio fait avec MUI
+        Portfolio "homemade" avec React MUI
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
 }
-
-//NightMode
-const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-  width: 62,
-  height: 34,
-  padding: 7,
-  '& .MuiSwitch-switchBase': {
-    margin: 1,
-    padding: 0,
-    transform: 'translateX(6px)',
-    '&.Mui-checked': {
-      color: '#fff',
-      transform: 'translateX(22px)',
-      '& .MuiSwitch-thumb:before': {
-        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-          '#fff',
-        )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
-      },
-      '& + .MuiSwitch-track': {
-        opacity: 1,
-        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-      },
-    },
-  },
-  '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
-    width: 32,
-    height: 32,
-    '&:before': {
-      content: "''",
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      left: 0,
-      top: 0,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-        '#fff',
-      )}" d="M9.305 1.667V3.75h1.389V1.667h-1.39zm-4.707 1.95l-.982.982L5.09 6.072l.982-.982-1.473-1.473zm10.802 0L13.927 5.09l.982.982 1.473-1.473-.982-.982zM10 5.139a4.872 4.872 0 00-4.862 4.86A4.872 4.872 0 0010 14.862 4.872 4.872 0 0014.86 10 4.872 4.872 0 0010 5.139zm0 1.389A3.462 3.462 0 0113.471 10a3.462 3.462 0 01-3.473 3.472A3.462 3.462 0 016.527 10 3.462 3.462 0 0110 6.528zM1.665 9.305v1.39h2.083v-1.39H1.666zm14.583 0v1.39h2.084v-1.39h-2.084zM5.09 13.928L3.616 15.4l.982.982 1.473-1.473-.982-.982zm9.82 0l-.982.982 1.473 1.473.982-.982-1.473-1.473zM9.305 16.25v2.083h1.389V16.25h-1.39z"/></svg>')`,
-    },
-  },
-  '& .MuiSwitch-track': {
-    opacity: 1,
-    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-    borderRadius: 20 / 2,
-  },
-}));
-
-
 
 export default function App() {
 
@@ -450,7 +409,7 @@ export default function App() {
         }}>
         <Toolbar sx={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'space-evenly',
           width: '100%'
         }}>
           <Stack direction="row" spacing={2}>
@@ -458,7 +417,7 @@ export default function App() {
             <Typography variant="h6"
               color="third.main"
               noWrap>
-              Jérôme BERTRAND - Developpeur
+              Bienvenue sur mon portfolio
             </Typography>
           </Stack>
         </Toolbar>
@@ -467,33 +426,36 @@ export default function App() {
         {/* Hero unit */}
         <Box
           sx={{
-            bgcolor: 'background.paper',
+            backgroundImage: `url(${process.env.PUBLIC_URL + './static/images/naturebokeh.jpg'})`,
             pt: 8,
             pb: 6,
           }}
         >
           <Stack
-            sx={{ pt: 4, mt: '-98px' }}
+            sx={{
+              pt: 2,
+              mt: '-81px'
+            }}
             direction="row"
             spacing={10}
             justifyContent="center"
           >
             <Button variant="outlined" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-bertrand-1ba55942" target="_blank">linkedIn</Button>
             <Button variant="outlined" href="https://github.com/Jeromalo" target="_blank">GIT</Button>
-            <Button variant="outlined" href="mailto:bertrand.jf.jerome@gmail.com" target="_blank">Contact Me</Button>
+            <Button variant="outlined" href="mailto:bertrand.jf.jerome@gmail.com" target="_blank">Contact</Button>
           </Stack>
           <Container maxWidth="md" >
-            <Box sx={{ mb: '-50px' }}>
+            <Box>
               <Typography
-                fontSize="120px"
+                fontSize="auto"
                 component="h1"
                 variant="h1"
                 align="center"
-                color="#023047"
+                color="white"
                 gutterBottom
                 fontFamily=''
               >
-                JEROME BERTRAND
+                Jerome BERTRAND
               </Typography>
             </Box>
             <Paper elevation={15}>
@@ -501,7 +463,7 @@ export default function App() {
                 component="img"
                 sx={{
                   // 16:9
-                  mt: '-70px',
+                  mt: '-55px',
                 }}
                 image="/static/images/avatar/JeromeProfil.JPG"
                 alt="random"
@@ -512,7 +474,7 @@ export default function App() {
                 component="h2"
                 variant="h2"
                 align="center"
-                color="#023047"
+                color="WHITE"
                 gutterBottom
                 fontFamily=''
               >
@@ -522,7 +484,7 @@ export default function App() {
                     component="h2"
                     variant="h2"
                     align="center"
-                    color="secondary.main"
+                    color="primary.main"
                     gutterBottom
                     fontFamily=''
                   >
@@ -532,42 +494,37 @@ export default function App() {
               </Typography>
             </Box>
             <Box>
-              <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                Je suis un développeur web junior basé à Paris et Saint-Malo.
+              <Typography variant="h5" align="center" color="white" paragraph>
+                Je suis un développeur web junior basé à Paris et Saint-Malo,
                 <br></br>
-                Reconverti de l'univers de la télévision
-                vers le code et le machine learning.
-                <br></br>
-                Front-End avec des connaissances Back-End,
-                j'ai également été sensibilisé à la méthodologie Agile.
+                reconverti de l'univers de la télévision vers celui du numérique.
                 <br></br>
                 <br></br>
-                <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                Orienté Front-End avec des connaissances Back-End,
+                <br></br>
+                j'ai également été sensibilisé à la méthodologie Agile,
+                <br></br>
+                à travers une formation de 10 mois commencée en Septembre 2021.
+                <Typography variant="h5" align="center" color="white" paragraph>
+                  <br></br>
                   "Au plaisir de collaborer ensemble."
                 </Typography>
               </Typography>
             </Box>
+            <ControlledAccordions />
+            <Stack
+              sx={{ pt: 4, mb: '50px' }}
+              direction="row"
+              spacing={10}
+              justifyContent="center"
+            >
+              <Button variant="outlined" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-bertrand-1ba55942" target="_blank">lkdn</Button>
+              <Button variant="contained" href="https://github.com/Jeromalo" target="_blank">GIT</Button>
+              <Button variant="outlined" href="mailto:bertrand.jf.jerome@gmail.com" target="_blank">Mail</Button>
+            </Stack>
           </Container>
         </Box>
-        <Box sx={{ width: '85%' }}
-          display="flex"
-          margin='auto'
-          mb='30px'
-          alignItems="center"
-          justifyContent="center">
-          <ControlledAccordions />
-        </Box>
-        <Stack
-          sx={{ pt: 4, mb: '50px' }}
-          direction="row"
-          spacing={10}
-          justifyContent="center"
-        >
 
-          <Button variant="outlined" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-bertrand-1ba55942" target="_blank">linkedIn</Button>
-          <Button variant="contained" href="https://github.com/Jeromalo" target="_blank">GIT</Button>
-          <Button variant="outlined" href="mailto:bertrand.jf.jerome@gmail.com" target="_blank">Contactez-moi</Button>
-        </Stack>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'primary.main', p: 0 }} component="footer">
