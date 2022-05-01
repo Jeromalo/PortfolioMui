@@ -11,7 +11,6 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Toolbar from '@mui/material/Toolbar';
-import { spacing } from '@mui/system';
 //Typo&Fonts
 import Typography from '@mui/material/Typography';
 import Bock_Personaluse from './fonts/Bock_Personaluse.woff';
@@ -19,10 +18,6 @@ import Bock_Personaluse from './fonts/Bock_Personaluse.woff';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { styled } from '@mui/material/styles';
-import { Switch } from '@mui/material';
-import { useState } from "react";
-import { FormControlLabel, FormGroup } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -45,7 +40,7 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Typography style={{fontWeight: "bold"}}>Du hard-skill :</Typography>
+          <Typography style={{ fontWeight: "bold" }}>Du hard-skill :</Typography>
           Html / Css
           <br></br>
           React / JavaScript
@@ -63,7 +58,7 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Typography style={{fontWeight: "bold"}}>Du soft-skill:</Typography>
+          <Typography style={{ fontWeight: "bold" }}>Du soft-skill:</Typography>
           Autonomie
           <br></br>
           Collectif
@@ -83,7 +78,7 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Typography style={{fontWeight: "bold"}}>De la passion :</Typography>
+          <Typography style={{ fontWeight: "bold" }}>De la passion :</Typography>
           Checkez mon instagram
           <br></br>
           <CardActions sx={{ mt: '-17px', ml: '-17px' }}>
@@ -98,10 +93,8 @@ export function AlternateTimeline() {
           <TimelineDot color="secondary" />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography style={{fontWeight: "bold"}}>Un parcours atypique :</Typography>
+          <Typography style={{ fontWeight: "bold" }}>Un parcours atypique :</Typography>
           Un BTS commercial,
-          <br></br>
-          des études à l'ESRA Paris
           <br></br>
           12 ans d'expériences dans l'audiovisuel,
           <br></br>
@@ -198,7 +191,7 @@ function ControlledAccordions() {
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: '#c4e4a2', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -207,25 +200,31 @@ function ControlledAccordions() {
                       pt: '0%',
                       height: '200px'
                     }}
-                    image="/static/images/piggybank.png"
+                    image="/static/images/greasybar.jpg"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
-                      Piggy Bank
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
+                      Greasy Bar
                     </Typography>
                     <Typography>
+                      React
+                      <br></br>
                       JavaScript
+                      <br></br>
+                      SqL
+                      <br></br>
+                      Flask
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" href="https://github.com/Jeromalo/Piggy-Bank" target="_blank">Accéder au code sur GIT</Button>
+                    <Button size="small" href="https://github.com/Jeromalo/GreasyBar" target="_blank">Accéder au code sur GIT</Button>
                   </CardActions>
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: 'fourth.main', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -238,7 +237,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
                       Snake
                     </Typography>
                     <Typography>
@@ -253,7 +252,7 @@ function ControlledAccordions() {
                 </Card>
               </Grid><Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: '#c4e4a2', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -266,7 +265,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
                       Weather Forecast
                     </Typography>
                     <Typography>
@@ -286,7 +285,7 @@ function ControlledAccordions() {
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: 'fourth.main', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -299,7 +298,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
                       Emoji Garden
                     </Typography>
                     <Typography>
@@ -313,7 +312,7 @@ function ControlledAccordions() {
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: '#c4e4a2', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -326,7 +325,7 @@ function ControlledAccordions() {
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
                       Flour Shower
                     </Typography>
                     <Typography>
@@ -342,7 +341,7 @@ function ControlledAccordions() {
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ backgroundColor: 'fourth.main', height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -351,25 +350,19 @@ function ControlledAccordions() {
                       pt: '0%',
                       height: '200px'
                     }}
-                    image="/static/images/greasybar.jpg"
+                    image="/static/images/piggybank.png"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography style={{fontWeight: "bold"}} gutterBottom variant="h5" component="h2">
-                      Greasy Bar
+                    <Typography style={{ fontWeight: "bold" }} gutterBottom variant="h5" component="h2">
+                      Piggy Bank
                     </Typography>
                     <Typography>
-                      React
-                      <br></br>
                       JavaScript
-                      <br></br>
-                      SqL
-                      <br></br>
-                      Flask
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" href="https://github.com/Jeromalo/GreasyBar" target="_blank">Accéder au code sur GIT</Button>
+                    <Button size="small" href="https://github.com/Jeromalo/Piggy-Bank" target="_blank">Accéder au code sur GIT</Button>
                   </CardActions>
                 </Card>
               </Grid>
