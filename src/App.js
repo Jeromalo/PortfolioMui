@@ -40,16 +40,24 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography style={{ fontWeight: "bold" }}>Du hard-skill :</Typography>
-          Html / Css
-          <br></br>
-          React / JavaScript
-          <br></br>
-          Flask / PHP
-          <br></br>
-          Wordpress
-          <br></br>
-          <br></br>
+          <Card
+            variant="outlined"
+            sx={{ bgcolor: "secondary.main", width: "auto", margin: "5px" }}
+            p={1}
+          >
+            <Typography style={{ fontWeight: "bold" }} variant="h6" pt={2} pl={3}>
+              Du hard-skill
+            </Typography>
+            <CardContent pt={2} px={2}>
+              <Typography variant="body2" pl={1} >
+                HTLM // CSS
+                <br></br>
+                React // // JavaScript // Flask // Sql
+                <br></br>
+                Wordpress // Bubble
+              </Typography>
+            </CardContent>
+          </Card>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -58,18 +66,28 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography style={{ fontWeight: "bold" }}>Du soft-skill:</Typography>
-          Autonomie
-          <br></br>
-          Collectif
-          <br></br>
-          Sens de l'équipe
-          <br></br>
-          Agile
-          <br></br>
-          Créatif
-          <br></br>
-          <br></br>
+          <Card
+            variant="outlined"
+            sx={{ bgcolor: "fourth.main", width: "auto", margin: "5px" }}
+            p={1}
+          >
+            <Typography style={{ fontWeight: "bold" }} variant="h6" pt={2} pl={3}>
+              Du soft-skill
+            </Typography>
+            <CardContent pt={2} px={2}>
+              <Typography variant="body2" pl={1} >
+                Autonomie
+                <br></br>
+                Collectif
+                <br></br>
+                Sens de l'équipe
+                <br></br>
+                Agile
+                <br></br>
+                Créatif
+              </Typography>
+            </CardContent>
+          </Card>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -78,14 +96,24 @@ export function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography style={{ fontWeight: "bold" }}>De la passion :</Typography>
-          Checkez mon instagram
-          <br></br>
-          <CardActions sx={{ mt: '-17px', ml: '-17px' }}>
-            <Button size="medium" href="https://www.instagram.com/jeromalo/?hl=fr" target="_blank">@Jeromalo</Button>
-          </CardActions>
-          <br></br>
-          <br></br>
+          <Card
+            variant="outlined"
+            sx={{ bgcolor: "secondary.main", width: "auto", margin: "5px" }}
+            p={1}
+          >
+            <Typography style={{ fontWeight: "bold" }} variant="h6" pt={2} pl={3}>
+              De la passion
+            </Typography>
+            <CardContent pt={2} px={2}>
+              <Typography variant="body2" pl={1} >
+                Checkez mon instagram
+                <br></br>
+                <CardActions sx={{ mt: '-17px', ml: '-15px' }}>
+                  <Button size="medium" href="https://www.instagram.com/jeromalo/?hl=fr" target="_blank">@Jeromalo</Button>
+                </CardActions>
+              </Typography>
+            </CardContent>
+          </Card>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -93,15 +121,25 @@ export function AlternateTimeline() {
           <TimelineDot color="secondary" />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography style={{ fontWeight: "bold" }}>Un parcours atypique :</Typography>
-          Un BTS commercial,
-          <br></br>
-          12 ans d'expériences dans l'audiovisuel,
-          <br></br>
-          une reconversion dans le numérique
-          en septembre 2021 via Matrice- UVSQ
-          <br></br>
-          <br></br>
+          <Card
+            variant="outlined"
+            sx={{ bgcolor: "fourth.main", width: "auto"}}
+            p={1}
+          >
+            <Typography style={{ fontWeight: "bold" }} variant="h6" pt={2} pl={3}>
+              Un parcours atypique
+            </Typography>
+            <CardContent pt={2} px={2}>
+              <Typography variant="body2" pl={1}>
+                Un BTS commercial,
+                <br></br>
+                12 ans d'expériences dans l'audiovisuel,
+                <br></br>
+                une reconversion dans le numérique
+                en septembre 2021 via Matrice- UVSQ
+              </Typography>
+            </CardContent>
+          </Card>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
